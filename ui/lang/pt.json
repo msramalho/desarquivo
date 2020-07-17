@@ -1,0 +1,215 @@
+ {
+     "basic": {
+         "and": "e",
+         "as": "as"
+     },
+     "default": {
+         "source_code": "Código Fonte",
+         "change_lang": "View in English"
+     },
+     "error": {
+         "not_found": "404 Não encontrado",
+         "other": "Página inexistente",
+         "main_page": "Página Inicial"
+     },
+     "index": {
+         "server": {
+             "ready": "Servidor pronto",
+             "inaccessible": "Servidor inacessível de momento, por favor verifique a sua ligaçãoe e tente novamente"
+         }
+     },
+     "examples": {
+         "title": "Exemplos",
+         "header": "Alguns exemplos para começar",
+         "load": "Carregar exemplo",
+         "items": {
+             "partidos-politicos": {
+                 "title": "Partidos Políticos em Portugal",
+                 "description": "Explore os principais partidos políticos com representantes eleitos em 2019 e as suas ligações"
+             },
+             "operacao-marques": {
+                 "title": "Operação Marquês",
+                 "description": "Investigue os principais envolvidos na Operação Marquês, bem como as restantes pessoas e organizações associadas à operação"
+             },
+             "presidentes-portugueses": {
+                 "title": "Presidentes Portugueses",
+                 "description": "Uma linha temporal dos presidentes portugueses da terceira república (1974 - presente)"
+             },
+             "dos-santos": {
+                 "title": "As empresas <i>'dos Santos'</i>",
+                 "description": "Explore as principais relações empresariais de José Eduardo dos Santos e da sua filha Isabel dos Santos, protagonista dos Luanda Leaks"
+             },
+             "estados-desunidos": {
+                 "title": "Estados <i>Des</i>unidos da América",
+                 "description": "Analise as parecenças e diferenças entre o partido democrata e o partido republicano nos EUA"
+             },
+             "gato-fedorento": {
+                 "title": "Gato Fedorento",
+                 "description": "Explore um dos icónicos shows de comédia portugueses e os quatro gatos"
+             },
+             "sociedades-pouco-secretas": {
+                 "title": "Sociedades Pouco Secretas",
+                 "description": "Veja como a Maçonaria e Opus Dei se enquadram na sociedade portuguesa e algumas das suas figuras públicas"
+             },
+             "nobel": {
+                 "title": "Nobel da Literatura",
+                 "description": "Percorra as pessoas mais fortemente associadas ao Nobel da Literatura. Também um exemplo de uma falha na deteção de entidades sinónimas :)"
+             },
+             "fatima-futebol-fado": {
+                 "title": "Fátima, Futebol e Fado",
+                 "description": "Veja como o Santuário de Fátima, Cristiano Ronaldo, e Amália Rodrigues, representando os três F's portugueses e respetiva presença na sociedade portuguesa, constituem uma enorme rede com bastantes interligações"
+             }
+         }
+     },
+     "instructions": {
+         "title": "Info e Ajuda",
+         "motto": "Onde o <u>implícito</u> se torna <u>explícito</u>",
+         "short_description": "Um projeto que procura <u>democratizar</u> e <u>complementar</u> o <span class='primary--text'>jornalismo de investigação</span> e a <span class='primary--text'>verificação de factos</span>.",
+         "description": "Tem por base a análise de milhões de notícias pertencentes aos principais jornais generalistas Portugueses, escritas nos últimos 20 anos, e que se encontram preservadas no <a href='https://arquivo.pt/'>arquivo.pt</a>.",
+         "expansion_instructions": {
+             "title": "Instruções",
+             "question": "Como?",
+             "search": {
+                 "title": "Pesquisar",
+                 "content": "Use a caixa de pesquisa do lado esquerdo para procurar <i style='color:#009688'>pessoas </i>, <i style='color:#673AB7'> organizações </i>, <i style='color:#00B8D4'>locais </i> ou mesmo <i style='color:#263238'> <b>outras</b> </i> entidades. Ao selecionar a entidade, o respetivo nó aparecerá no explorador."
+             },
+             "expand": {
+                 "title": "Expandir",
+                 "content": "Tendo uma entidade no explorador pode recorrer a qualquer uma das seguintes formas para a expandir: <ul> <li>duplo clique na entidade</li> <li> clique do lado direito no nó seguido de clique em <kbd>expandir</kbd> no menu </li> <li> na secção <kbd>Outras ações</kbd> ao lado esquerdo, em baixo </li> </ul>Quando se dá a expansão são aplicados os limites ao <u>número</u> de entidades a expandir e ao <u>tipo</u> de entidades, de acordo com os valores selecionados. <br />Se repetir uma das três ações acima num nó expandido este irá voltar ao estado não expandido e as entidades soltas que antes estavam ligadas a ele serão eliminadas."
+             },
+             "filter": {
+                 "title": "Filtrar",
+                 "content": "Poderá filtrar tanto os nós visíveis no explorador como os que aparecerão ao expandir um nó de duas formas <ul> <li>escolhendo apenas parte dos quatro tipos de entidades possíveis</li> <li> escondendo nós com base no peso das ligações atuais que estão no explorador <ul> <li>o peso de uma ligação entre duas entidades corresponde ao número de notícias em que elas co-ocorrem</li> <li>ao expandir um nó as ligações não são automaticamente escondidas, mas serão quando este filtro for alterado</li> </ul> </li> </ul>"
+             },
+             "investigate": {
+                 "title": "Investigar",
+                 "content": "Tirando a míriade de possibilidades que a pesquisa, expansão, filtragem e a própria interatividade do explorador permitem, é ainda possível",
+                 "item0": "identificar, de entre as relações existentes, quais são comuns a todas as entidades selecionadas",
+                 "item1": "aferir se existe uma ligação direta entre duas entidades",
+                 "item2": "procurar relações comuns entre duas entitdades"
+             },
+             "visualize": {
+                 "title": "Visualizar",
+                 "content": "Na secção <kbd>Disposição dos nós</kbd> pode experimentar diferentes tipos de visualização dos nós do grafo. <br />Adicionalmente, pode interagir com o explorador <ul> <li>arrastando (nós ou o fundo)</li> <li>fazendo zoom</li> <li>acedendo com um clique do lado direito do rato a um menu com mais opções onde pode</li> <ul> <li>destacar nós</li> <li>selecionar nós e ligações</li> <li>selecionar nós ligados a um dado nó</li> <li>apagar nós/ligações</li> </ul> </ul>"
+             },
+             "news": {
+                 "title": "Notícias",
+                 "content": "Se a pesquisa de notícias se encontrar ativada (usar o interruptor no canto superior direito), sempre que selecionar <ul> <li> <b>um nó:</b> serão carregadas as notícias em que a respetiva entidade aparece </li> <li> <b>uma ligação:</b> serão carregadas as notícias comuns às entidades que forma a ligação </li> </ul>Por sua vez, as notícias que aparecem do lado direito mostram o título e parte do conteúdo, bem como o conjunto de todas as entidades que nela aparecem (carregando numa adiciona-a ao explorador) e também um link para a página original preservada no arquivo.pt."
+             },
+             "shortcuts": {
+                 "title": "Atalhos de teclado",
+                 "content": "Para facilitar a utilização da ferramenta, há ainda os seguintes atalhos de teclado: <ul> <li> <kbd>ctrl+f</kbd>&nbsp;ativa a caixa de pesquisa de entidades </li> <li> <kbd>ctrl+a</kbd>&nbsp;seleciona todos os nós visíveis no explorador </li> <li> <kbd>del</kbd>&nbsp;apaga todos os nós selecionados do explorador </li> <li> <kbd>esc</kbd>&nbsp;retira a seleção de qualquer nó </li> <li> <kbd>n</kbd>&nbsp;ativa ou desativa a pesquisa automática de notícias ao selecionar um nó ou ligação </li> </ul>"
+             },
+             "notes": {
+                 "title": "Notas finais",
+                 "content": "É possível transferir uma captura do conteúdo do explorador, em formato de imagem, através do botão:"
+             }
+         },
+         "expansion_about": {
+             "title": "Sobre",
+             "question": "O quê?",
+             "content": "<p>O Desarquivo foi desenhado como um esforço reprodutível que tem por base um conjunto de configurações das quais se destacam</p> <ul class='mb-3'> <li> As primeiras entidades a investigar e que dão origem à expansão da rede - nesta versão, foram <kbd>José Sócrates</kbd> e <kbd>Isabel dos Santos</kbd> </li> <li>O período de tempo a incluir - nesta versão, entre o ano 2000 e o ano 2020</li> <li> Os jornais a procurar - nesta versão, foram <a href='https://www.publico.pt/'>Público</a>, <a href='https://expresso.pt/'>Expresso</a>, <a href='https://www.dn.pt/'>Diário de Notícias</a>, <a href='https://www.cmjornal.pt/'>Correio da Manhã</a>, <a href='https://sol.sapo.pt/'>Sol</a>, <a href='https://visao.sapo.pt/'>Visão</a> e <a href='https://www.jn.pt/'>Jornal de Notícias</a> </li> </ul>As notícias recolhidas foram analisadas e de lá foram extraídas entidades <small>(pessoas, organizações, lugares, entre outras)</small> e respetivas relações. Estas relações formam uma rede imensa que é agora explorável nesta interface gráfica ou diretamente nos dados que são de <a href='https://github.com/msramalho/desarquivo/blob/master/DATASETS.md' >livre acesso</a>. <br />O desarquivo assenta sobre duas bases de dados, nomeadamente <a href='https://www.mongodb.com/' >MongoDB</a> (NoSQL) e <a href='https://neo4j.com/'>neo4j</a> (Grafos)."
+         },
+         "expansion_context": {
+             "title": "Contexto",
+             "question": "Quando?",
+             "content": "Apesar de idealizado anteriormente, vale a pena referir que a primeira versão pública deste projeto foi inteiramente desenvolvida durante o estado de emergência decretado em Portugal devido à pandemia covid-19, no início de 2020."
+         },
+         "expansion_author": {
+             "title": "Autor",
+             "question": "Quem?",
+             "content": {
+                 "pre": "Aluno finalista do",
+                 "mieic": "Mestrado Integrado em Engenharia Informática e Computação",
+                 "dur": "na",
+                 "feup": "Faculdade de Engenharia da Universidade do Porto",
+                 "rest": "Para entrar em contacto comigo, use o <a href='https://www.linkedin.com/in/msramalho/' >LinkedIn</a>. <br />Para sugerir ideias e reportar bugs, use o <a href='https://github.com/msramalho/desarquivo/issues' >GitHub</a> do projeto abrindo um <i> <a href='https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue'>issue</a></i>."
+             }
+         },
+         "expansion_open_source": {
+             "title": "Código aberto",
+             "content": "<p>Tanto os dados como o código respetivo à recolha, processamento, disponibilização em API e visualização do Desarquivo estarão disponíveis no <a href='https://github.com/msramalho/desarquivo'>GitHub</a>.</p>"
+         }
+
+     },
+     "canvas": {
+         "link": "Ligação",
+         "no_direct_link": "Não há ligação direta entre",
+         "connection_found": "Ligação encontrada, total de notícias:",
+         "nodes_found": "Nós encontrados:",
+         "errors": {
+             "communication": "Erro de comunicação, por favor aguarde e tente novamente.",
+             "repeated_entity": "Esta entidade já está no explorador."
+         }
+     },
+     "filter_form": {
+         "title": "Pesquisar, Expandir e Visualizar",
+         "search_label": "Pesquisar entidades",
+         "nothing_to_show": "Nada para mostrar",
+         "expand": {
+             "title": "Expandir",
+             "most": "entidades mais importantes",
+             "all": "todas as entidades (pode ser lento)",
+             "and_search": "Expandir e pesquisar",
+             "singular": "tipo de entidade",
+             "plural": "tipos de entidades"
+         },
+         "types": {
+             "people": "Pessoas",
+             "orgs": "Organizações",
+             "places": "Locais",
+             "others": "Outros"
+         },
+         "connections": "Mostrar ligações com peso entre",
+         "arrangement": {
+             "title": "Disposição do grafo",
+             "spaced": "Espaçado",
+             "radial": "Radial",
+             "concentric": "Concêntrico",
+             "breadth": "Largura"
+         },
+         "other_actions": {
+             "title": "Outras ações",
+             "capture": "Transferir captura do explorador",
+             "invert": "Inverter seleção",
+             "expand_node": "Expandir nó",
+             "keep_selected": "Manter apenas comuns aos selecionados",
+             "direct_link": "Investigar ligação direta",
+             "common_links": "Investigar ligações em comum",
+             "delete": {
+                 "pre": "Apagar",
+                 "singular": "nó",
+                 "plural": "nós"
+             }
+         },
+         "errors": {
+             "communication": "Erro de comunicação, por favor aguarde e tente novamente."
+         }
+     },
+     "network_canvas": {
+         "context_menu": {
+             "expand": "expandir",
+             "revertExpand": "reverter expansão",
+             "highlight": "destacar",
+             "removeHighlight": "reverter destaque",
+             "select": "selecionar",
+             "deselect": "remover seleção",
+             "selectConnections": "selecionar nós ligados",
+             "remove": "apagar"
+         }
+     },
+     "news": {
+         "title": "Notícias",
+         "activate": "Ativar",
+         "deactivate": "Desativar",
+         "toggle_message": " pesquisa de notícias automática (pode também usar a tecla 'n')",
+         "entities": "Entidades",
+         "original": "Ver original",
+         "before": "antes de",
+         "errors": {
+             "communication": "Erro de comunicação ao procurar notícias, por favor aguarde e tente novamente.",
+             "communication_ask": "Erro de comunicação ao pedir notícias, por favor aguarde e tente novamente."
+         },
+         "months": ["jan", "fev", "mar", "mai", "abr", "jun", "jul", "ago", "set", "out", "nov", "dez"]
+     }
+ }

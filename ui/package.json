@@ -1,0 +1,36 @@
+{
+    "name": "desarquivo",
+    "version": "1.0.0",
+    "description": "Um projeto que procura democratizar e complementar o jornalismo de investigação e a verificação de factos. Arquivo.pt para justiça, jornalismo e verdade.",
+    "author": "msramalho",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+        "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.3.6",
+        "axios-cache-adapter": "^2.5.0",
+        "cookie-universal-nuxt": "^2.1.4",
+        "cytoscape": "^3.14.1",
+        "cytoscape-context-menus": "^3.1.0",
+        "cytoscape-cose-bilkent": "^4.1.0",
+        "cytoscape-fcose": "^1.2.1",
+        "file-saver": "^2.0.2",
+        "jquery": "^3.5.0",
+        "localforage": "^1.7.3",
+        "localforage-memoryStorageDriver": "^0.9.2",
+        "nuxt": "^2.0.0",
+        "vue-i18n": "^8.18.2",
+        "vuetify-toast-snackbar": "^0.6.1"
+    },
+    "devDependencies": {
+        "@nuxtjs/vuetify": "^1.0.0",
+        "push-dir": "^0.4.1"
+    }
+}

@@ -1,0 +1,214 @@
+{
+    "basic": {
+        "and": "and",
+        "as": "the"
+    },
+    "default": {
+        "source_code": "Source Code",
+        "change_lang": "Ver em Português"
+    },
+    "error": {
+        "not_found": "404 Not found",
+        "other": "Non-existent page",
+        "main_page": "Main page"
+    },
+    "index": {
+        "server": {
+            "ready": "Backend ready",
+            "inaccessible": "Backend unavailable at the moment, please check your connection and try again"
+        }
+    },
+    "examples": {
+        "title": "Examples",
+        "header": "Some examples to explore",
+        "load": "Load example",
+        "items": {
+            "partidos-politicos": {
+                "title": "Political Parties in Portugal",
+                "description": "Explore the main political parties with elected representatives in 2019 and their relationships"
+            },
+            "operacao-marques": {
+                "title": "Operation Marquês",
+                "description": "Investigate the main people involved in one of the most controversial judiciary processes in Portugal which includes José Sócrates, an ex prime-minister of Portugal, along with the companies involved and associations therein"
+            },
+            "presidentes-portugueses": {
+                "title": "Portuguese Presidents",
+                "description": "A timeline of past and present Portuguese presidents of the third republic (1974 - today)"
+            },
+            "dos-santos": {
+                "title": "The companies <i>'dos Santos'</i>",
+                "description": "Explore the main business connections of José Eduardo dos Santos and his daughter Isabel dos Santos, the main person of interest in Luanda Leaks."
+            },
+            "estados-desunidos": {
+                "title": "<i>Un</i>united States of America",
+                "description": "Analyse the similarities and differences in the American two-party system - democrats and republicans."
+            },
+            "gato-fedorento": {
+                "title": "Gato Fedorento",
+                "description": "Explore um the iconic portuguese reality shows, and its four cats"
+            },
+            "sociedades-pouco-secretas": {
+                "title": "Not so Secret Societies",
+                "description": "Se how freemasonry and opus-dei fit into the portuguese universe and with some of its public figures"
+            },
+            "nobel": {
+                "title": "Nobel Prize for Literature",
+                "description": "Go through the Portuguese entities most highly associated to the Nobel Prize for Literature and, of course, the Portuguese laureate José Saramago"
+            },
+            "fatima-futebol-fado": {
+                "title": "Fátima, Football and Fado",
+                "description": "The three colloquial pillars of Portugal. Explore the links between the Sanctuary of Fátima (religion), Cristiano Ronaldo (football), and Amália Rodrigues (fado)."
+            }
+        }
+    },
+    "instructions": {
+        "title": "Info and Help",
+        "motto": "Where the <u>implicit</u> becomes <u>explicit</u>",
+        "short_description": "A project that seeks to <u>democratize</u> and <u>complement</u> <span class='primary--text'>investigative journalism</span> and <span class='primary--text'>fact-checking</span>.",
+        "description": "It is based on millions of news of the main generalist Portuguese newspapers, written in the past 20 years, and that are preserved on the <a href='https://arquivo.pt/'>portuguese web archive (arquivo.pt)</a>.",
+        "expansion_instructions": {
+            "title": "Instructions",
+            "question": "How?",
+            "search": {
+                "title": "Search",
+                "content": "Use the search box on the left to look for <i style='color:#009688'> people</i>, <i style='color:#673AB7'>organizations </i>, <i style='color:#00B8D4'> places</i> or even <i style='color:#263238'><b>other</b> </i> entities. When you select the entity, it will appear on the explorer."
+            },
+            "expand": {
+                "title": "Expand",
+                "content": "With an entity in the explorer, you can use any of the following ways to expand it: <ul> <li>double click on the entity</li> <li>right click on the node followed by <kbd>expand</kbd> in the menu</li> <li>in the section <kbd>Other actions</kbd> on the lower left</li> </ul> When the expansion happens we apply the limits on the <u>number</u> of entities to show and the <u>type</u> of entities, according to the selected values. <br/>If you repeat any of the above three actions on a node, this will return to its initial non-expanded state, and the now loose entities will be removed."
+            },
+            "filter": {
+                "title": "Filter",
+                "content": "You can filter both the visible nodes in the explorer as well as those that will appear along the way, in two different ways:<ul> <li>choosing only some of the four types of entities available</li> <li>hiding nodes based on the weight of the links currently in the explorer: <ul> <li>the weight of a link between two entities corresponds to the number of news where they co-occur</li> <li>when expanding a node, the links are not automatically hidden but will be once this filter is changed</li> </ul> </li> </ul>"
+            },
+            "investigate": {
+                "title": "Investigate",
+                "content": "Apart from the countless possibilities that search, expansion and filtering allow, it is still possible to",
+                "item0": "identify, among existing relationships, which are common to the selected entities",
+                "item1": "check if there is a link between any two entities",
+                "item2": "search common relationships common to two entites"
+            },
+            "visualize": {
+                "title": "Visualize",
+                "content": "In the <kbd>Node arrangement</kbd> section, you can try out different types of graph visualization. <br/> Additionally, you can interact with the explorer<ul> <li>by dragging (the nodes or the canvas)</li> <li>zooming in and out</li> <li>right clicking on a node or link to see a menu with more options, where you can:</li> <ul> <li>highlight nodes</li> <li>select nodes and links</li> <li>select the links of a given node</li> <li>remove nodes and links</li> </ul> </ul>"
+            },
+            "news": {
+                "title": "News",
+                "content": "If the news search is active (use the toggle button on the top right corner), every time you select <ul> <li> <b>a node:</b> you will see the news in which the respective node appears</li> <li> <b>a link:</b>you will see the news where both entities that form the link appear </li> </ul>In turn, the news on the right side show the title, part of the content as well as the complete set of entities appearing in it (clicking one will place it in the canvas/explorer), as well as a url to the originally preserved page on arquivo.pt."
+            },
+            "shortcuts": {
+                "title": "Keyboard shortcuts",
+                "content": "In order to increase productivity, the following keyboard shortcuts are available: <ul> <li> <kbd>ctrl+f</kbd>&nbsp;activates the entitiy search box</li> <li> <kbd>ctrl+a</kbd>&nbsp;selects all nodes in the explorer</li> <li> <kbd>del</kbd>&nbsp;removes the selected nodes </li> <li> <kbd>esc</kbd>&nbsp;clears selected nodes and links</li> <li> <kbd>n</kbd>&nbsp;toggles the automatic news search when clicking a node or link</li> </ul>"
+            },
+            "notes": {
+                "title": "Final notes",
+                "content": "It is also possible to capture a screenshot of the graph, in image format, through the button: "
+            }
+        },
+        "expansion_about": {
+            "title": "About",
+            "question": "What?",
+            "content": "<p>Desarquivo is designed as a reproducible effort based on a set of configurations from which we highlight</p> <ul class='mb-3'> <li>The first investigated entities, the ones that lead to the subsequent network expansion. In this version, these are <kbd>José Sócrates</kbd> (ex prime-minister of Portugal) and <kbd>Isabel dos Santos</kbd> (from Luanda Leaks) </li> <li>The period of time to include in the current version, which is between the year 2000 and 2020</li> <li>The newspapers to search - in this version: <a href='https://www.publico.pt/'>Público</a>, <a href='https://expresso.pt/'>Expresso</a>, <a href='https://www.dn.pt/'>Diário de Notícias</a>, <a href='https://www.cmjornal.pt/'>Correio da Manhã</a>, <a href='https://sol.sapo.pt/'>Sol</a>, <a href='https://visao.sapo.pt/'>Visão</a> and <a href='https://www.jn.pt/'>Jornal de Notícias</a> </li> </ul>The collected news were analysed and the entities they mentioned were identified <small>(people, organizations, places, and others)</small> along with their links. These links form an immense network which is now exploitable in this graphical interface, or directly in the <a href='https://github.com/msramalho/desarquivo/blob/master/DATASETS.md' >open sourced</a> raw data. <br/>Desarquivo rests on two databases, namely <a href='https://www.mongodb.com/' >MongoDB</a> (NoSQL) and <a href='https://neo4j.com/'>neo4j</a> (Graphs)."
+        },
+        "expansion_context": {
+            "title": "Context",
+            "question": "When?",
+            "content": "Although idealized previously, it is worth mentioning that the first public version of this project was entirely developed during the state of emergency declared in Portugal, due to the covid-19 pandemic, early in 2020."
+        },
+        "expansion_author": {
+            "title": "Author",
+            "question": "Who?",
+            "content": {
+                "pre": "Graduating student of",
+                "mieic": "Master in Informatics and Computing Engineering (BSc + MSc)",
+                "dur": "at",
+                "feup": "Faculty of Engineering of the University of Porto",
+                "rest": "To get in touch with me, use <a href='https://www.linkedin.com/in/msramalho/' >LinkedIn</a>. <br />To suggest ideas and report bugs, use the project's <a href='https://github.com/msramalho/desarquivo/issues' >GitHub</a> and open an <a href='https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue'>issue</a>."
+            }
+        },
+        "expansion_open_source": {
+            "title": "Open Source",
+            "content": "<p>Both data, and code (for data collection, processing, API, and visualization of Desarquivo) are available on <a href='https://github.com/msramalho/desarquivo'>GitHub</a>.</p>"
+        }
+    },
+    "canvas": {
+        "link": "Link",
+        "no_direct_link": "No direct link between",
+        "connection_found": "Connection found, total news: ",
+        "nodes_found": "Nodes found:",
+        "errors": {
+            "communication": "Communication error, please wait and try again.",
+            "repeated_entity": "This entity is already in the explorer"
+        }
+    },
+    "filter_form": {
+        "title": "Search, Expand, and Visualize",
+        "search_label": "Search entities",
+        "nothing_to_show": "Nothing to show",
+        "expand": {
+            "title": "Expand",
+            "most": "most important entities",
+            "all": "all entities (might be slow)",
+            "and_search": "Expand and search",
+            "singular": "type of entity",
+            "plural": "types of entities"
+        },
+        "types": {
+            "people": "People",
+            "orgs": "Orgs",
+            "places": "Places",
+            "others": "Others"
+        },
+        "connections": "Show links with weight between",
+        "arrangement": {
+            "title": "Graph arrangement",
+            "spaced": "Spaced",
+            "radial": "Radial",
+            "concentric": "Concentric",
+            "breadth": "Breadth"
+        },
+        "other_actions": {
+            "title": "Other actions",
+            "capture": "Download explorer capture",
+            "invert": "Invert selection",
+            "expand_node": "Expand node",
+            "keep_selected": "Keep nodes in common with selected",
+            "direct_link": "Investigate direct link",
+            "common_links": "Investigate common links",
+            "delete": {
+                "pre": "Remove",
+                "singular": "node",
+                "plural": "nodes"
+            }
+        },
+        "errors": {
+            "communication": "Communication error, please wait and try again."
+        }
+    },
+    "network_canvas":{
+        "context_menu":{
+            "expand": "expand",
+            "revertExpand": "revert expansion",
+            "highlight": "highlight",
+            "removeHighlight": "revert highlight",
+            "select": "select",
+            "deselect": "remove selection",
+            "selectConnections": "select connected nodes",
+            "remove": "remove"
+        }
+    },
+    "news": {
+        "title": "News",
+        "activate": "Activate",
+        "deactivate": "Deactivate",
+        "toggle_message": " auto news search (you can user 'n' key)",
+        "entities": "Entities",
+        "original": "Open original",
+        "before": "before",
+        "errors": {
+            "communication": "Communication error when searching for news, please wait and try again.",
+            "communication_ask": "Communication error when retrieving for news, please wait and try again."
+        },
+        "months": ["jan", "feb", "mar", "may", "apr", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+    }
+}
