@@ -15,7 +15,7 @@ Um projeto que procura democratizar e complementar o <u>jornalismo de investiga�
 <br>
 Arquivo.pt para justiça, jornalismo e verdade.
 <br>
-<a href="README.md">Versão em Português</a>
+<h3 align="center"><a href="README.md">Versão em Português</a></h3>
 </p>
 
 ## About the Project
