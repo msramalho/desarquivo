@@ -68,7 +68,7 @@ A Interface, desenvolvida em [Vue.js](https://vuejs.org/) com [Nuxt.js](https://
 De realçar que se o projeto for executado em Windows, é necessário desativar o volume do serviço mongodb.
 
 ## Futuro do Desarquivo
-O Desarquivo continuará a ser melhorado e procurará tornar-se uma ferramenta mais completa que se afirma como defensora de transparência, liberdade de expressão, e investigação jornalística. As possibilidades são inúmeras e as ideias também. Se te revês neste projeto e acreditas que faz sentido, considera contribuir com tempo, conselhos, ou investimento financeiro. 
+O Desarquivo continuará a ser melhorado e procurará tornar-se uma ferramenta mais completa que se afirma como defensora de transparência, liberdade de expressão, e investigação jornalística. As possibilidades são inúmeras e as ideias também. Se te revês neste projeto e acreditas que faz sentido, considera contribuir com tempo, conselhos, ou ideais. 
 
 Para entrar em contacto comigo, utiliza o [LinkedIn](https://www.linkedin.com/in/msramalho/). 
 
