@@ -15,7 +15,7 @@ Arquivo.pt para justiça, jornalismo e verdade.
 <br>
 Arquivo.pt for justice, journalism and truth.</i>
 <br>
-<a href="README_en.md">English Version</a>
+<h3 align="center"><a href="README_en.md">English Version</a></h3>
 </p>
 
 ## Sobre o Projeto
