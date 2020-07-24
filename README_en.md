@@ -68,7 +68,7 @@ Excluding the collection process and the interface, all the remaining parts of D
 It should be noted that, at the moment, if the project is executed on Windows it is necessary to deactivate the volume in the mongodb service.
 
 ## Future of Desarquivo
-Desarquivo will continue being improved and can grow into a more comprehensive tool that stands for transparency, freedom of speech, and journalistic investigation. The possibilities are many, and the ideas too. If you relate to these project and believe in it, we ask you to contribute with time, advice, or financial investment. 
+Desarquivo will continue being improved and can grow into a more comprehensive tool that stands for transparency, freedom of speech, and journalistic investigation. The possibilities are many, and the ideas too. If you relate to these project and believe in it, we ask you to contribute with time, advice, or ideas. 
 
 To get in touch with me, please use [LinkedIn](https://www.linkedin.com/in/msramalho/). 
 
