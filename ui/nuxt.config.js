@@ -91,7 +91,9 @@ export default {
     axios: {
         // baseURL: "http://localhost:5000/"
         // baseURL: "https://cors-anywhere.herokuapp.com/http://35.234.109.95/"
-        baseURL: "https://rocky-spire-69467.herokuapp.com/http://35.234.109.95/"
+        // baseURL: "https://rocky-spire-69467.herokuapp.com/http://35.234.109.95/"
+        // baseURL: "https://peaceful-forest-55095.herokuapp.com//http://35.234.109.95/"
+        baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? "https://peaceful-forest-55095.herokuapp.com/http://35.234.109.95/" : "http://localhost:5000/"
         // baseURL: "http://35.234.109.95/"
     },
     /*
