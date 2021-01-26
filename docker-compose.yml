@@ -25,6 +25,8 @@ services:
     volumes: # does not work on windows
       - ./mongodb/data/db:/data/db
     # could be expose: instead of ports for local docker network only
+    env_file:
+      - .mongo.env
     ports:
       - "27017:27017"
   api:
@@ -37,6 +39,8 @@ services:
     depends_on:
       - mongo
       - neo4j
+    env_file:
+      - ./api/.env
     environment: # override .env
       - FLASK_DEBUG=0
 

@@ -5,6 +5,7 @@ mongodb/
 collection/log_collect.txt
 collection/rnd/dump*/
 application/
+*.env
 
 config.json
 urls.txt
