@@ -1,4 +1,4 @@
-import os
+import os, time
 from flask import Flask, request
 from flask_pymongo import PyMongo
 from flask_cors import CORS
@@ -6,6 +6,9 @@ from py2neo import Graph
 from loguru import logger
 # https://stackoverflow.com/a/53918402/6196010
 from gevent.pywsgi import WSGIServer
+
+# wait for containers to be up
+time.sleep(5)
 
 app = Flask(__name__)
 #app.debug = True  # TODO: update in production
