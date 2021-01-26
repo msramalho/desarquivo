@@ -20,6 +20,7 @@ if app.debug:
 else:  # docker version
     app.config["MONGO_URI"] = "mongodb://mongo:27017/" + "admin"
     graph = Graph("bolt://neo4j:7687")
+app.config["MONGO_URI"] = os.environ.get('MONGO_ADDRESS') or app.config["MONGO_URI"]
 
 mongo = PyMongo(app)
 db = mongo.cx.get_database("desarquivo")
