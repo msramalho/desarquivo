@@ -7,8 +7,6 @@ from loguru import logger
 # https://stackoverflow.com/a/53918402/6196010
 from gevent.pywsgi import WSGIServer
 
-# wait for containers to be up
-time.sleep(5)
 
 app = Flask(__name__)
 #app.debug = True  # TODO: update in production
@@ -20,10 +18,23 @@ print("DEBUG? %s" % app.debug)
 app.config["MONGO_SERVER_SELECTION_TIMEOUT_MS"] = 1000 * 60 * 60 # 1h
 if app.debug:
     app.config["MONGO_URI"] = "mongodb://localhost:27017/" + "admin"
-    graph = Graph("bolt://localhost:7687")
+    graph_uri = "bolt://localhost:7687"
 else:  # docker version
     app.config["MONGO_URI"] = "mongodb://mongo:27017/" + "admin"
-    graph = Graph("bolt://neo4j:7687")
+    graph_uri = "bolt://neo4j:7687"
+
+# wait for containers to be up
+timeout = 0
+while True:
+    try:
+        graph = Graph(graph_uri)
+        break
+    except:
+        print("Neo4j not up, sleeping for 1s ...")
+        timeout+=1
+        time.sleep(1)
+        if timeout == 120: exit("I waited but neo4h never came.")
+
 app.config["MONGO_URI"] = os.environ.get('MONGO_ADDRESS') or app.config["MONGO_URI"]
 
 mongo = PyMongo(app)
