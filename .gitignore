@@ -6,6 +6,8 @@ collection/log_collect.txt
 collection/rnd/dump*/
 application/
 *.env
+.neo4j.env
+.mongo.env
 
 config.json
 urls.txt
