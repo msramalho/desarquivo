@@ -64,7 +64,7 @@ cp ./api/.env.example .api/.env
 ...
 
 # criar as pastas correspondentes aos volumes necessários (se for o Docker a fazê-lo as permissões estaram erradas)
-mkdir neo4j/import neo4j/data neo4j/conf neo4j/logs mongodb/
+mkdir neo4j/import neo4j/data neo4j/conf neo4j/logs mongodb/data/db
 
 # colocar os datasets no formato igual ao dataset03a.zip (i_entities.csv e i_relationships.csv) na pasta /import
 unzip dataset03a.zip -d <SOME DIR>
