@@ -50,6 +50,7 @@ Podem ainda aceder aos [datasets](DATASETS.md) disponibilizados e executar _quer
 
 #### Instruções completas para usar o comando `neo4j-admin`
 ```bash
+# instalar docker, docker-compose, mongorestore -> pesquisar instruções mais recentes online
 # clonar este repositório e entrar na pasta
 git clone https://github.com/msramalho/desarquivo
 cd desarquivo
@@ -86,7 +87,6 @@ docker-compose up -d
 # público editar as portas do serviço neo4j no docker-compose
 ...
 # quando os 3 containers estiverem a correr
-# instalar mongorestore no servidor (fora dos containers) -> pesquisar instruções mais recentes online
 ...
 # importar os dados para o neo4j
 # carregar o dataset02.zip para o servidor
