@@ -44,9 +44,64 @@ Podem aceder ao [desarquivo](https://msramalho.github.io/desarquivo/) e explorar
 
 <p align="center"><img src="https://i.imgur.com/NRxBO0h.png"/></p>
 
-### Investigadores
+### Investigadores e Programadores
 
 Podem ainda aceder aos [datasets](DATASETS.md) disponibilizados e executar _queries_ mais complexas sobre os grafos gerados.
+
+#### Instruções completas para usar o comando `neo4j-admin`
+```bash
+# clonar este repositório e entrar na pasta
+git clone https://github.com/msramalho/desarquivo
+cd desarquivo
+
+# fazer uma cópia dos ficheiros deo configuração
+cp .neo4j.env.example .neo4j.env
+cp .mongo.env.example .mongo.env
+cp ./api/.env.example .api/.env
+
+# (editar os ficheiros com as passwords desejadas)
+...
+
+# criar as pastas correspondentes aos volumes necessários (se for o Docker a fazê-lo as permissões estaram erradas)
+mkdir neo4j/import neo4j/data neo4j/conf neo4j/logs mongodb/
+
+# colocar os datasets no formato igual ao dataset03a.zip (i_entities.csv e i_relationships.csv) na pasta /import
+unzip dataset03a.zip -d <SOME DIR>
+cp <SOME DIR>/i_*.csv ./neo4j/import/
+
+# correr o seguinte comando para que importar o dataset neo4j
+# (verificar que a pasta atual é $HOME/desarquivo) senão atualizar
+docker run --interactive --tty --rm \
+    --publish=7474:7474 --publish=7687:7687 \
+    --volume=$HOME/desarquivo/neo4j/data:/data \
+    --volume=$HOME/desarquivo/neo4j/import:/import \
+    --user="$(id -u):$(id -g)" \
+    neo4j:latest \
+neo4j-admin import --id-type=STRING --nodes=/import/i_entities.csv --relationships=rel=/import/i_connections.csv
+
+# iniciar o docker-compose
+docker-compose up -d
+
+# se aceder a IP:7474 verá o interface do neo4j, para o esconder do
+# público editar as portas do serviço neo4j no docker-compose
+...
+# quando os 3 containers estiverem a correr
+# instalar mongorestore no servidor (fora dos containers) -> pesquisar instruções mais recentes online
+...
+# importar os dados para o neo4j
+# carregar o dataset02.zip para o servidor
+unzip dataset02.zip -d dataset02
+cd dataset02
+
+# usar o mongorestore para importar para a isntância mongo
+# -d é o nome da base de dados
+# . é a pasta atual onde estarão os .bson e .json
+mongorestore -u USER -p PASSWORD --authenticationDatabase admin --uri="mongodb://localhost:27017/" -d desarquivo . 
+
+# feito.
+# basta aceder a IP:80 para aceder à API que estará ligada a ambas as bases de dados, com os dados carregados
+```
+
 
 <p align="center"><img src="https://i.imgur.com/wNThGU0.png"/></p>
 
