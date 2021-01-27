@@ -6,8 +6,8 @@ services:
     volumes:
       - ./neo4j/data:/data
       - ./neo4j/logs:/logs
-      - ./neo4j/conf:/conf
-      - ./neo4j/import:/import
+      - ./neo4j/conf:/var/lib/neo4j/conf
+      - ./neo4j/import:/var/lib/neo4j/import
     # could be expose: instead of ports for local docker network only
     ports:
       - "7474:7474"
