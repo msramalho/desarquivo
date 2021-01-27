@@ -8,6 +8,7 @@ application/
 *.env
 .neo4j.env
 .mongo.env
+temp/
 
 config.json
 urls.txt
