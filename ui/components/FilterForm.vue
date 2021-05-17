@@ -28,6 +28,7 @@
             :items="items"
             :search-input.sync="search"
             :filter="()=>true"
+            item-value="_id"
             DONT-cache-items
             hide-details
             hide-no-data
