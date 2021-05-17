@@ -8,11 +8,16 @@ services:
       - ./neo4j/logs:/logs
       - ./neo4j/conf:/var/lib/neo4j/conf
       - ./neo4j/import:/var/lib/neo4j/import
-    # could be expose: instead of ports for local docker network only
-    ports:
-      - "7474:7474"
-      - "7473:7473"
-      - "7687:7687"
+    # expose outside the host machine
+    # ports: 
+    #   - "7474:7474"
+    #   - "7473:7473"
+    #   - "7687:7687"
+    # only in the docker network
+    expose:
+      - "7474"
+      - "7473"
+      - "7687"
     env_file:
       - .neo4j.env
     environment:
@@ -25,11 +30,14 @@ services:
     restart: always
     volumes: # does not work on windows
       - ./mongodb/data/db:/data/db
-    # could be expose: instead of ports for local docker network only
-    env_file:
-      - .mongo.env
-    ports:
-      - "27017:27017"
+      env_file:
+        - .mongo.env
+      # expose outside the host machine
+      # ports: 
+      #   - "27017:27017"
+      # only in the docker network
+      expose:
+        - "27017"
   api:
     build:
       context: ./api/
