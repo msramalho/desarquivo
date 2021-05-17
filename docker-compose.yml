@@ -30,14 +30,14 @@ services:
     restart: always
     volumes: # does not work on windows
       - ./mongodb/data/db:/data/db
-      env_file:
-        - .mongo.env
-      # expose outside the host machine
-      # ports: 
-      #   - "27017:27017"
-      # only in the docker network
-      expose:
-        - "27017"
+    env_file:
+      - .mongo.env
+    # expose outside the host machine
+    # ports: 
+    #   - "27017:27017"
+    # only in the docker network
+    expose:
+      - "27017"
   api:
     build:
       context: ./api/
