@@ -25,12 +25,12 @@
         "jquery": "^3.5.1",
         "localforage": "^1.9.0",
         "localforage-memoryStorageDriver": "^0.9.2",
-        "nuxt": "^2.14.3",
+        "nuxt": "^3.0.0",
         "vue-i18n": "^8.21.0",
         "vuetify-toast-snackbar": "^0.6.1"
     },
     "devDependencies": {
-        "@nuxtjs/vuetify": "^1.11.2",
+        "@nuxtjs/vuetify": "^1.12.3",
         "push-dir": "^0.4.1"
     }
 }
